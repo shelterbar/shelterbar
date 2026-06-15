@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SHELTER | Burgers & Beers</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Montserrat:wght@700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#3E3F3D;
+color:#f5f5f5;
+line-height:1.6;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url('portada.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+color:white;
+}
+
+.hero-content{
+max-width:800px;
+}
+
+.hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:6rem;
+letter-spacing:4px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:1.3rem;
+letter-spacing:2px;
+margin-bottom:35px;
+}
+
+.buttons{
+display:flex;
+gap:15px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.btn{
+background:#D4A359;
+color:#111;
+padding:14px 28px;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+}
+
+.section{
+padding:90px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+.section-title{
+font-family:'Montserrat',sans-serif;
+font-weight:800;
+text-transform:uppercase;
+letter-spacing:2px;
+font-size:2.4rem;
+text-align:center;
+margin-bottom:20px;
+color:#D4A359;
+}
+
+.subtitle{
+text-align:center;
+max-width:800px;
+margin:auto;
+color:#d8d8d8;
+margin-bottom:50px;
+}
+
+.buscador{
+max-width:600px;
+margin:0 auto 40px;
+}
+
+.buscador input{
+width:100%;
+padding:18px;
+border:none;
+border-radius:18px;
+font-size:16px;
+outline:none;
+}
+
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+align-items:start;
+}
+
+.card{
+background:#4A4D4A;
+padding:30px;
+border-radius:25px;
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+.card h3{
+font-family:'Montserrat',sans-serif;
+font-weight:800;
+text-transform:uppercase;
+letter-spacing:1px;
+font-size:1.2rem;
+margin-bottom:20px;
+color:#D4A359;
+}
+
+.item{
+padding:12px 0;
+border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.item small{
+color:#cfcfcf;
+}
+
+.contact{
+background:#4A4D4A;
+text-align:center;
+padding:90px 20px;
+}
+
+.contact-buttons{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+margin-top:25px;
+}
+
+.contact-buttons a{
+background:#D4A359;
+color:#111;
+padding:14px 28px;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:40px 20px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:4rem;
+}
+
+.section-title{
+font-size:2rem;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>SHELTER</h1>
+
+<p>Burgers & Beers</p>
+
+<div class="buttons">
+
+<a href="#menu" class="btn">Ver Carta</a>
+
+<a href="https://www.instagram.com/shelter_bardeburgas/?hl=es" target="_blank" class="btn">
+Instagram
+</a>
+
+<a href="https://www.google.com.ar/maps/place/Shelter+Bar+de+Burgas+Concordia" target="_blank" class="btn">
+Cómo llegar
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+Nuestra Propuesta
+</h2>
+
+<p class="subtitle">
+No solo se trata de las mejores burgas. En Shelter encontrarás un ambiente siempre amigable, buena música, gente con ganas de pasarla bien y la combinación perfecta entre hamburguesas artesanales y cerveza bien fría.
+</p>
+
+</section>
+
+<section id="menu" class="section">
+
+<h2 class="section-title">
+Carta
+</h2>
+
+<div class="buscador">
+<input type="text" id="buscador" placeholder="Buscar en la carta...">
+</div>
+
+<div class="menu-grid">
+
+<div class="card">
+
+<h3>BURGAS</h3>
+
+<div class="item">
+PROVO SMASH — $19000<br>
+<small>Carne x2, provoleta grillada, cheddar, pimientos asados y mayo de pimientos.</small>
+</div>
+
+<div class="item">
+SWEET ONION — $18000<br>
+<small>Carne x2, cheddar, panceta, cebolla caramelizada y salsa mil islas.</small>
+</div>
+
+<div class="item">
+CRUNCHY — $18000<br>
+<small>Carne x2, cheddar x4, huevo, panceta, papas pay y ketchup.</small>
+</div>
+
+<div class="item">
+CLASSIC — $18000<br>
+<small>Carne x2, cebolla grillada, queso azul, tomate confitado y rucula.</small>
+</div>
+
+<div class="item">
+SHELTER — $18000<br>
+<small>Carne x2, cheddar x4. cebolla grillada y mostaza dulce.</small>
+</div>
+
+</div>
+
+<div class="card">
+
+<h3 style="margin-bottom:5px;">EMPANADAS</h3>
+
+<p style="font-size:14px;color:#777;margin-top:0;margin-bottom:20px;">
+$2500 c/u
+</p>
+
+<div class="item">SALTEÑAS</div>
+<div class="item">JAMÓN Y QUESO</div>
+
+</div>
+
+<div class="card">
+
+<h3>PAPAS</h3>
+
+<div class="item">
+SOLAS — $8000<br>
+</div>
+
+<div class="item">
+CHEDDAR — $9000<br>
+</div>
+
+<div class="item">
+COMPLETAS — $12000<br>
+<small>Cheddar, panceta, huevo y verdeo</small>
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>PIZZAS INDIVIDUALES</h3>
+
+<div class="item">
+MUZZA — $7500<br>
+</div>
+
+<div class="item">
+NAPO — $8000<br>
+</div>
+
+<div class="item">
+PANCETA Y VERDEO — $9000<br>
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>TEQUEÑOS</h3>
+
+<span style="font-size:22px;font-weight:700;color:#7d2b2b;">
+$10000
+</span><br><br>
+
+<small>
+8 unidades<br>
+</small>
+
+</div>
+
+<div class="card">
+
+<h3>NACHOS</h3>
+
+<span style="font-size:22px;font-weight:700;color:#7d2b2b;">
+$11000
+</span><br><br>
+
+<small>
+Nachos, cheddar, carne, guacamole, cebolla morada y queso grillado<br>
+</small>
+
+</div>
+
+<div class="card">
+
+<h3>BIRRAS</h3>
+
+<div class="item">
+IMPERIAL STOUT<br>
+<small>Oscura, cremosa y tostada</small>
+</div>
+
+<div class="item">
+DORADA PAMPEANA<br>
+<small>Rubia, liviana y refrescante</small>
+</div>
+
+<div class="item">
+IPA AMERICANA<br>
+<small>Cítirica, intensa y lupulada</small>
+</div>
+
+<div class="item">
+NEIPA<br>
+<small>Jugosa, tropical y suave</small>
+</div>
+
+<div class="item">
+DUBBEL<br>
+<small>Maltosa y caramelizada</small>
+</div>
+
+<div class="item">
+CREAM ALE<br>
+<small>Suave, ligera y equilibrada</small>
+</div>
+
+<div class="item">
+SOUR<br>
+<small>Acida, frutada y refrescante</small>
+</div>
+
+<div class="item">
+HONEY<br>
+<small>Suave, dulce y facil de tomar</small>
+</div>
+
+<div class="item">
+SCOTTISH<br>
+<small>Maltosa, rojiza y caramelizada</small>
+</div>
+
+<div class="item">
+APA<br>
+<small>Refrescante, frutada y equilibrada</small>
+</div>
+
+<div class="item">
+PORTER<br>
+<small>Oscura, tostada y con todas de café</small>
+</div>
+
+<div class="item">
+SESSION IPA<br>
+<small>Liviana, aromática y refrescante</small>
+</div>
+
+<div class="item">
+AMBER ALE<br>
+<small>Caramelo suave y amargor moderado</small>
+</div>
+
+<div class="item">
+FRUIT BEER<br>
+<small>Liviana, dulce y frutada</small>
+</div>
+  
+</div>
+
+<div class="card">
+
+<h3>TRAGOS</h3>
+
+<div class="item">
+GASEOSA — $2500<br>
+</div>
+
+<div class="item">
+FERNET — $6500<br>
+</div>
+
+<div class="item">
+CAMPARI — $5500<br>
+</div>
+
+<div class="item">
+GIN — $7000<br>
+</div>
+
+<div class="item">
+CAIPI — $5500<br>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+Información
+</h2>
+
+<div class="menu-grid">
+
+<div class="card">
+
+<h3>Ubicación</h3>
+
+<p>
+Urquiza 1095<br>
+Concordia<br>
+Entre Ríos
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Horarios</h3>
+
+<p>
+Lunes a Domingo<br>
+20:00 a 00:00
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Redes</h3>
+
+<p>
+Seguinos en Instagram para conocer novedades y promociones.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2 class="section-title">
+Visitanos
+</h2>
+
+<p>
+SHELTER · Burgers & Beers
+</p>
+
+<div class="contact-buttons">
+
+<a href="https://www.instagram.com/shelter_bardeburgas/?hl=es" target="_blank">
+Instagram
+</a>
+
+<a href="https://www.google.com.ar/maps/place/Shelter+Bar+de+Burgas+Concordia" target="_blank">
+Google Maps
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+SHELTER · Burgers & Beers
+</p>
+
+</footer>
+
+<script>
+
+const buscador = document.getElementById("buscador");
+
+buscador.addEventListener("keyup", function(){
+
+let texto = buscador.value.toLowerCase();
+
+let items = document.querySelectorAll(".item");
+
+items.forEach(item => {
+
+let contenido = item.textContent.toLowerCase();
+
+if(contenido.includes(texto)){
+item.style.display = "block";
+}else{
+item.style.display = "none";
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
